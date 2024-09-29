@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="company">Intela Corporation</h1>
+        <h2 id="title">Registration Form</h1>
+        <p id="description">Thank You for choosing our Company</p>
 
+        <!--here Data starts--> 
+
+        <form id="survey-form">
+            <label id="name-label">Enter Your Name<br> 
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </label><br>
+            <label id="email-label">Enter Your Email Id<br>
+                <input type="email" id="email" placeholder="Enter Your Email ID" required>
+            </label><br>
+            <label id="number-label">Enter Your Age<br>
+                <input type="number" id="number" max="120" min="14" placeholder="Enter Your Age" required>
+            </label><br>
+            
+            <!--here Select starts--> 
+
+
+            <p class="datafeed">What is your Educational Status</p>
+            <select id="dropdown" name="education-status" required>
+                <option value="Select">Select</option>
+                <option value="Secondary School Student">Secondary School Student</option>
+                <option value="Doing Undergraduation">Doing Undergraduation</option>
+                <option value="Doing Postgraduation">Doing Postgraduation</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Prefer Not to say">Prefer Not to say</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <!--here Choice starts--> 
+
+            <p class="datafeed">Would you forward this form to someone?</p>
+            <input id="yes" type="radio" name="choice" value="yes" checked>
+            <label for="yes">Yes,I will</label><br>
+            <input id="think" type="radio" name="choice" value="think">
+            <label for="think">I will think about it.</label><br>
+            <input id="no" type="radio" name="choice" value="no">
+            <label for="no">No</label><br>
+
+            <!--here Checkbox starts--> 
+
+            <p class="datafeed">What Skills Do You Possess?</p>
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">JAVA</label><br>
+            <input type="checkbox" id="cpp" name="skills" value="c++">
+            <label for="cpp">C++</label><br>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="react" name="skills" value="react">
+            <label for="react">React</label><br>
+            <input type="checkbox" id="mongodb" name="skills" value="mongodb">
+            <label for="mongodb">MongoDB</label><br>
+            <input type="checkbox" id="sql" name="skills" value="sql">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="go" name="skills" value="go">
+            <label for="go">GoLang</label><br>
+            <input type="checkbox" id="rust" name="skills" value="rust">
+            <label for="rust">Rust</label><br>
+
+            <!--Here TextArea Starts-->
+
+            <label for="comments" class="datafeed">Leave Your Comments and Suggestions</label><br>
+            <textarea id="comments" rows="4" cols="50" name="comments" placeholder="Write your suggestions here"></textarea><br>
+            <button type="submit" form="survey-form" id="submit">Submit</button>
+        </form>
+    </div>
+    
+  </form>
+</body>
